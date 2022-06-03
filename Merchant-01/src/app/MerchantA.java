@@ -4,9 +4,11 @@ package app;
 public class MerchantA extends Merchant implements Bonus {
 
     String email;
+    String lastName;
 
-    public MerchantA(String name, String phone, String email) {
-        super(name, phone);
+    public MerchantA(String firstName, String lastName, String phone, String email) {
+        super(firstName, phone);
+        this.lastName = lastName;
         this.email = email;
     }
 

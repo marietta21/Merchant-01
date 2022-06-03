@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class App {
 
-    static String merchantName;
+    static String merchantFistName;
+    static String merchantLastName;
     static String email;
     static String phone;
     static String productName;
@@ -24,9 +25,9 @@ public class App {
     private static void doInputs() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter merchant first name: ");
-        merchantName = scanner.nextLine();
+        merchantFistName = scanner.nextLine();
         System.out.print("Enter merchant last name: ");
-        merchantName = scanner.nextLine();
+        merchantLastName = scanner.nextLine();
         System.out.print("Enter merchant phone: ");
         phone = scanner.nextLine();
         System.out.print("Enter merchant email: ");
@@ -40,7 +41,7 @@ public class App {
     }
 
     private static String processData() {
-        merchantA = new MerchantA(merchantName, phone, email);
+        merchantA = new MerchantA(merchantFistName, merchantLastName, phone, email);
         infoMerchant = merchantA.infoMerchant();
         product = new ProductA(productName, quantity, price);
         infoProduct = product.infoProduct();
