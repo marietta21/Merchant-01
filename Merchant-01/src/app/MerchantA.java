@@ -13,9 +13,9 @@ public class MerchantA extends Merchant implements Bonus {
     }
 
     public String infoMerchant() {
-        String name = getName();
+        String firstName = getName();
         String phone = getPhone();
-        return "\nMerchant: " + name + ", " + phone + ", " + email + "\n";
+        return "\nMerchant: " + firstName + " " + lastName + ", " + phone + ", " + email + "\n";
     }
 
     @Override
